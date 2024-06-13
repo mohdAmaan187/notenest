@@ -1,0 +1,180 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    width: 18.9vw;
+    padding: 10px;
+    background-color: white;
+}
+
+.company_name {
+    text-align: left;
+    font-size: 6vh;
+    margin: 0;
+    font-family: "Kanit";
+    font-weight: 500;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar_buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+}
+
+.sidebar_button_icon {
+    max-width: 26px;
+    justify-content: left;
+    /* margin-top: 9px; */
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.home_button,
+.browse_button,
+.account_button {
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding-top: 5px;
+    width: 16vw;
+    height: 50px;
+    text-align: left;
+    font-size: 19.12px;
+    font-family: "Kanit";
+    margin: 0;
+    align-content: center;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home_button:hover,
+.browse_button:hover,
+.account_button:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.html_links {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:370px) and (max-width: 600px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left:0;
+        right: 0;
+        height: 150px;
+        width: 100vw;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .company_name {
+        text-align: center;
+    }
+
+    .sidebar_buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        column-gap: 5px;
+        padding: 0px 10px;
+        padding-right: 30px;
+    }
+
+    .home_button,
+    .browse_button,
+    .account_button { 
+        width: auto;
+        padding: auto;
+    }
+
+    .home_button {
+        margin-left: 0px;
+    }
+
+
+    .account_button {
+        margin-right: 0px;
+    }
+
+    .html_links {
+        width: max-content;
+        margin: 0px;
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:370px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left:0;
+        right: 0;
+        height: 210px;
+        width: 100vw;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .company_name {
+        text-align: center;
+    }
+    
+    .sidebar_buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 5px;
+        row-gap: 5px;
+        padding: 10px;
+        padding-right: 20px;
+    }
+
+    .home_button,
+    .browse_button,
+    .account_button { 
+        width: auto;
+        padding: auto;
+        font-size: medium;
+    }
+
+    .home_button {
+        margin-left: 0px;
+    }
+
+
+    .account_button {
+        margin-right: 0px;
+    }
+
+    .html_links {
+        /* width: max-content; */
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .sidebar {
+        width: 20.9vw;
+    }
+
+    .company_name {
+        font-size: 36px;
+    }
+
+    .home_button,
+    .browse_button,
+    .account_button { 
+        width: auto;
+        padding: auto;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}

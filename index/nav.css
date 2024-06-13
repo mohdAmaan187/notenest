@@ -41,6 +41,11 @@
     margin-right: 10px;
 }
 
+.html_links {
+    text-decoration: none;
+    color: black;
+}
+
 .sign_in_button {
     margin-right: 0;
     margin-top: 5px;
