@@ -3,14 +3,14 @@
     top: 0;
     left:0;
     bottom: 0;
-    width: 18.9vw;
+    width: 16.9vw;
     padding: 10px;
     background-color: white;
 }
 
 .company_name {
     text-align: left;
-    font-size: 6vh;
+    font-size: 5.5vh;
     margin: 0;
     font-family: "Kanit";
     font-weight: 500;
@@ -166,7 +166,7 @@ img {
     }
 
     .company_name {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .home_button,
