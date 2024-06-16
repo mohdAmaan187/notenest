@@ -2,8 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #E2C799;
-    padding-bottom: 1000px;
+    /* padding-top: 100px; */
+    background-color: #222831;
+    padding-bottom: 4000px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -20,12 +21,13 @@ body::-webkit-scrollbar {
 
 
 .hero {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    margin-bottom: 100px;
 }
 
 .hero_heading_text,
@@ -39,31 +41,115 @@ body::-webkit-scrollbar {
 
 .hero_heading_text {
     font-size: 70px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .hero_heading_description {
     font-size: 30px;
-    color: #464646;
+    color: #aaaaaa;
+    margin: 20px 0px 30px 0px ;
 }
 
 .hero_heading_button {
     width: 150px;
     height: 60px;
     font-size: 24px;
-    background-color: #532E1C;
+    background-color: #000000;
     color: white;
     font-family: "Kanit";
     border: none;
     border-radius: 10px;
     animation: fade 2s ease-in 1;
-    transition: background-color 0.5s,box-shadow 0.5s, scale 0.5s;
+    transition: background-color 0.5s,box-shadow 0.5s, scale 0.5s,color 0.5s;
 }
 
 .hero_heading_button:hover {
-    background-color: #85533a;
-    box-shadow: 0 0 20px black;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
     scale: 1.1;
+    color: #000000;
+}
+
+.hero_animation {
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+.hero_animation_heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.hero_animation_heading_text {
+    font-family: "Kanit";
+    font-weight: 500;
+    max-width: 1000px; 
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.hero_animation_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero_animation_main_logo,
+.hero_animation_photos {
+    width: 20vh;
+}
+
+.hero_animation_main_logo {
+    z-index: 10;
+    border-radius: 50px;
+}
+
+.photo1 {
+    animation: scroll_1;
+    animation-timeline: view(-20%);
+    z-index: 1;
+}
+
+@keyframes scroll_1 {
+    from {
+        transform: translateX(-500px) translateY(-150px);
+    }
+    to {
+        transform: translateX(200px) translateY(400px);
+    }
+}
+
+.photo2 {
+    animation: scroll_2;
+    animation-timeline: view(-10%);
+    z-index: 2;
+}
+
+@keyframes scroll_2 {
+    from {
+        transform: translateY(-200px);
+    }
+    to {
+        transform: translateY(400px);
+    }
+}
+
+.photo3 {
+    animation: scroll_3;
+    animation-timeline: view(-20%);
+}
+
+@keyframes scroll_3 {
+    from {
+        transform: translateX(500px) translateY(-150px);
+    }
+    to {
+        transform: translateX(-200px) translateY(400px);
+    }
 }
 
 @keyframes fade {
