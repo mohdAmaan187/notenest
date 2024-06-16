@@ -49,8 +49,8 @@ body::-webkit-scrollbar {
 
 .hero_heading_button {
     width: 150px;
-    height: 40px;
-    font-size: 20px;
+    height: 60px;
+    font-size: 24px;
     background-color: #532E1C;
     color: white;
     font-family: "Kanit";

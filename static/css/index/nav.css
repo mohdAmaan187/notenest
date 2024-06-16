@@ -49,14 +49,14 @@
 .sign_in_button {
     margin-right: 0;
     margin-top: 5px;
-    height: 3.7vh;
-    width: 6vw;
+    height: max-content;
+    width: max-content;
     background-color: black;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     transition: background-color 0.5s,box-shadow 0.5s,color 0.5s;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
 }
 
 .sign_in_button:hover {
@@ -103,8 +103,6 @@
 
     .sign_in_button {
         width: auto;
-        padding-bottom: 40px;
-        /* padding: 0px 20px; */
         font-size: 5vw;
     }
 }
@@ -147,8 +145,6 @@
 
     .sign_in_button {
         width: auto;
-        padding-bottom: 40px;
-        /* padding: 0px 20px; */
         font-size: 3vw;
     }
     
