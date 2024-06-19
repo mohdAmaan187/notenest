@@ -21,7 +21,8 @@ body::-webkit-scrollbar {
 }
 
 .about_us_hero {
-    margin-top: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: start;
@@ -31,7 +32,7 @@ body::-webkit-scrollbar {
 .hero_animation_2,
 .hero_animation_3 {
     width: 32.9vw;
-    height: 99vh;
+    height: 104vh;
     border: solid;
     border-color: white;
     display: flex;
@@ -70,9 +71,7 @@ body::-webkit-scrollbar {
     writing-mode: vertical-rl;
     font-size: 12.2vh;
     color: white;
-    opacity: 0
-    
-    ;
+    opacity: 0;
     scale: 1;
     transition: opacity 1s, scale 1s,transform 1s;
 }
@@ -82,14 +81,14 @@ body::-webkit-scrollbar {
 .hero_animation_3:hover .ashad {
     opacity: 1;
     scale: 1.2;
-    transform: translateY(80px);
+    transform: translateY(90px);
 }
 
 .about_us_info {
     flex: 1;
     opacity: 0;
     scale: .9;
-    transition: opacity 2s, scale 1s;
+    transition: opacity 1s, scale 1s;
 }
 
 .info_heading,
@@ -102,7 +101,7 @@ body::-webkit-scrollbar {
 
 
 .info_heading {
-    font-size: 7vh;
+    font-size: vh;
 }
 
 .info_text {
@@ -114,4 +113,59 @@ body::-webkit-scrollbar {
 .hero_animation_3:hover .about_us_info {
     opacity: 1;
     scale: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .about_us_hero {
+        flex-direction: column;
+    }
+
+    .hero_animation_1,
+    .hero_animation_2,
+    .hero_animation_3 {
+        width: 98.7vw;
+        
+    }
+    .info_heading {
+        font-size: 5vh;
+    }
+    
+    .info_text {
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 1024px) {
+    .about_us_hero {
+        flex-direction: column;
+    }
+
+    .hero_animation_1,
+    .hero_animation_2,
+    .hero_animation_3 {
+        width: 99.2vw;
+        height: 102vh;
+        
+    }
+    .info_heading {
+        font-size: 5vh;
+    }
+    
+    .info_text {
+        font-size: 2.5vh;
+    }
+
+    .hero_animation_1:hover .alfiya,
+    .hero_animation_2:hover .amaan,
+    .hero_animation_3:hover .ashad {
+        transform: translateY(130px);
+    }
+}
+
+@media screen and (width:1706px){
+    .hero_animation_1:hover .alfiya,
+    .hero_animation_2:hover .amaan,
+    .hero_animation_3:hover .ashad {
+        transform: translateY(130px);
+    }
 }
