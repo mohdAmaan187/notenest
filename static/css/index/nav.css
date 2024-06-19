@@ -58,6 +58,7 @@
     color: white;
     transition: background-color 0.5s,box-shadow 0.5s,color 0.5s;
     padding-bottom: 3px;
+    text-decoration: none;
 }
 
 .sign_in_button:hover,
