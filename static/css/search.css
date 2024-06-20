@@ -45,17 +45,7 @@ body {
     padding: 20px;
     width: calc(100% - 250px);
 }
-.task-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.task-table th, .task-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-.task-table th {
-    background-color: #f4f4f4;
-}
+
 @media (max-width: 768px) {
     .sidebar {
         transform: translateX(-250px);
