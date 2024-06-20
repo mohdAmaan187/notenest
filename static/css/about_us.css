@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 }
 
 .hero_animation_1:hover{
-    background-color: rgb(140, 0, 255);
+    background-color: rgb(255, 0, 212);
 }
 
 .hero_animation_2 {
@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
 }
 
 .hero_animation_2:hover {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .hero_animation_3 {
@@ -74,7 +74,7 @@ body::-webkit-scrollbar {
 }
 
 .hero_animation_3:hover {
-    background-color: darkblue;
+    background-color: rgb(0, 0, 0);
 }
 
 .alfiya,
@@ -89,6 +89,10 @@ body::-webkit-scrollbar {
     opacity: 0;
     scale: 1;
     transition: opacity 1s, scale 1s,transform 1s;
+}
+
+.amaan {
+    color: black;
 }
 
 .hero_animation_1:hover .alfiya,
@@ -114,6 +118,10 @@ body::-webkit-scrollbar {
     font-weight: 500;
 }
 
+.f1,
+.f2 {
+    color: black;
+}
 
 .info_heading {
     font-size: 5vh;
