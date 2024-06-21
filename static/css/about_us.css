@@ -181,7 +181,7 @@ body::-webkit-scrollbar {
     .hero_animation_1:hover .alfiya,
     .hero_animation_2:hover .amaan,
     .hero_animation_3:hover .ashad {
-        transform: translateY(130px);
+        transform: translateY(100px);
     }
 }
 
@@ -190,5 +190,21 @@ body::-webkit-scrollbar {
     .hero_animation_2:hover .amaan,
     .hero_animation_3:hover .ashad {
         transform: translateY(130px);
+    }
+}
+
+@media screen and (width:690px){
+    .hero_animation_1:hover .alfiya,
+    .hero_animation_2:hover .amaan,
+    .hero_animation_3:hover .ashad {
+        transform: translateY(100px);
+    }
+}
+
+@media screen and (width:1024px) and (height:600px){
+    .hero_animation_1:hover .alfiya,
+    .hero_animation_2:hover .amaan,
+    .hero_animation_3:hover .ashad {
+        transform: translateY(80px);
     }
 }
