@@ -7,12 +7,16 @@
     <title>Responsive Sidebar with Task List</title>
     <link rel="stylesheet" href="/static/css/search.css"/>
 </head>
+
 <body>
     <div class="sidebar" id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">
             <i class="fas fa-bars"></i>
         </div>
-        <h2>Settings</h2>
+        <div class="userId">
+        
+        </div>
+       
         <ul>
             <li><a href="#"><i class="fas fa-home"></i> chatbox</a></li>
             <li><a href="#"><i class="fas fa-search"></i> Browse</a></li>
@@ -23,10 +27,29 @@
         </ul>   
     </div>
     <div class="content">
-        
-        <!-- <h2>Search Notes here</h2> -->
-        <input type="text" placeholder="Search notes..." style="padding: 10px; width: 50%; margin-bottom: 20px; border-radius: 8px;">
+        <input type="text" placeholder="Search notes..." style="padding: 10px; width: 50%; margin: 20px; border-radius: 8px;">
+        <table style="margin-top: 3rem;">
+           <tr>
+            <th>YEAR</th>
+            <th>SEMESTER</th>
+            <th>CHAPTER</th>
+            <th>SUBJECT</th>
+           </tr>
+        </table>
     </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
     <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
