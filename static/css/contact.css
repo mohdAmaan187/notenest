@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
     font-weight: 300;
     background-color: white;
     color: black;
-    width: 102%;
+    width: 101%;
     height: 50px;
 }
 
@@ -128,8 +128,8 @@ body::-webkit-scrollbar {
 } 
 
 .support_box {
-    background-color: black;
-    height: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
     width: 100%;
 }
 
@@ -198,5 +198,4 @@ body::-webkit-scrollbar {
     .send_inquiry {
         width: 440px;
     }
-
 }
