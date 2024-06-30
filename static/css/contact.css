@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
 .contact_us_forms,
 .direct_contact_container {
     flex: 1;
-    padding: 30px 0px 30px 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 .container_head,
@@ -52,8 +52,7 @@ body::-webkit-scrollbar {
     color: rgb(211, 211, 211);
 }
 
-.first_name,
-.last_name,
+.full_name,
 .email_address,
 .contact_reason {
     margin-bottom: 10px;
@@ -66,17 +65,19 @@ body::-webkit-scrollbar {
     border: none;
 }
 
-.first_name,
+/* .first_name,
 .last_name {
     margin-right: 10px;
     width: 20.8vw;
     min-width: 0px;
-}
+} */
 
 .email_address,
+.full_name,
 .contact_reason {
     margin: 10px 0px;
-    width: 42.8vw;
+    /* width: 42.8vw; */
+    width: 100%;
 }
 
 .send_inquiry {
@@ -88,7 +89,7 @@ body::-webkit-scrollbar {
     font-weight: 300;
     background-color: white;
     color: black;
-    width: 43.4vw;
+    width: 101%;
     height: 50px;
 }
 
@@ -105,7 +106,6 @@ body::-webkit-scrollbar {
     display: flex;
     /* align-items: center; */
 }
-
 
 .details_head,
 .details_text {
@@ -127,7 +127,11 @@ body::-webkit-scrollbar {
     width: 56px;
 } 
 
-
+.support_box {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+}
 
 
 
@@ -158,12 +162,8 @@ body::-webkit-scrollbar {
         font-size: 18px;
     }
 
-    .first_name,
-    .last_name {
-        width: 90vw;
-    }
-
     .email_address,
+    .full_name,
     .contact_reason {
         width: 90vw;
     }
@@ -189,12 +189,8 @@ body::-webkit-scrollbar {
         font-size: 18px;
     }
 
-    .first_name,
-    .last_name {
-        width: 203px;
-    }
-
     .email_address,
+    .full_name,
     .contact_reason{
         width: 430px;
     }
@@ -202,5 +198,4 @@ body::-webkit-scrollbar {
     .send_inquiry {
         width: 440px;
     }
-
 }
