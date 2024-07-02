@@ -42,16 +42,26 @@
             <p class="post_head">
                 Your Experience is our Top Priority
             </p>
-            <!-- <form action="Send a message" class="contact_form"> -->
-                <input placeholder="First Name" class="first_name" name="First_name" type="text">
-                <input placeholder="Last Name" class="last_name" name="Last_name" type="text">
+            {% if submit %}
+            <p class="form_submitted">
+                Your quiry/issue is submitted successfully
+            </p>
+            {% endif %}
+            <form method="post" action="" class="contact_form">
+                <select name="contacting_for" class="selector">
+                    <option value="">Select An Option</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Quiry">Quiry</option>
+                    <option value="Issues">Issues</option>
+                </select>
+                <input placeholder="Full name or Username" class="full_name" name="Name_username" type="text">
                 <br/>
                 <input placeholder="Email Address" class="email_address" name="Email" type="email">
-            <!-- </form> -->
                 <br>
-                <textarea placeholder="Describe your Issue/quiry" rows="8" cols="45" name="text" class="contact_reason"></textarea>
+                <textarea placeholder="Describe your Issue/quiry/feedback" rows="8" cols="45" name="issue_quiry_feedback" class="contact_reason"></textarea>
                 <br>
                 <button class="send_inquiry">Send a Message</button>
+            </form>
         </div>
         <div class="direct_contact_container">
             <h1 class="reach_head">Reach Us Directly</h1>
@@ -59,42 +69,18 @@
                 <img src="https://www.svgrepo.com/show/468759/email-file-text.svg" alt="" class="d_img">
                 <div class="texts">
                     <p class="details_head">Our email Address</p>
-
                     <p class="details_text">NoteCrud@gmail.com</p>
+                </div>
+            </div>
+            <div class="predefined_support">
+                <div class="support_box">
+                    
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        <div class="footer_company_name">
-            <h1 class="footer_company_name_text">NoteCrud</h1>
-            <div class="footer_company_socials">
-                <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="" class="footer_insta" draggable="false">
-                <img src="https://cdn.iconscout.com/icon/free/png-512/free-twitter-x-9583449-7741112.png?f=webp&w=256" alt="" class="footer_twitter" draggable="false">
-                <img src="https://www.svgrepo.com/show/475700/youtube-color.svg" alt="" class="footer_yt" draggable="false">
-            </div>
-        </div>
-        <div class="footer_details">
-            <div class="footer_info1">
-                <p class="footer_company_topic">
-                    <bolder>Company</bolder>
-                </p>
-                <p class="links">About us</p>
-                <p class="links">Security</p>
-                <p class="links">Terms and Privacy</p>
-            </div>
-            <div class="footer_into2">
-                <p class="footer_topic">
-                    <bolder>Topic</bolder>
-                </p>
-                <p class="links">Work with us</p>
-                <p class="links">Support</p>
-                <p class="links">Contact Us</p>
-            </div>
-        </div>
-    </div>
-
-
+<!-- footer starts here  -->
+{% include "footer.html" %}
 </body>
 </html>
