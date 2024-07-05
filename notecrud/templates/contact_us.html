@@ -42,12 +42,11 @@
             <p class="post_head">
                 Your Experience is our Top Priority
             </p>
-            {% if submit %}
-            <p class="form_submitted">
-                Your quiry/issue is submitted successfully
-            </p>
+            {% if submission %}
+            <p class="form_submitted">Your {{selected}} is submitted successfully</p>
             {% endif %}
             <form method="post" action="" class="contact_form">
+            {% csrf_token %}
                 <select name="contacting_for" class="selector">
                     <option value="">Select An Option</option>
                     <option value="Feedback">Feedback</option>
