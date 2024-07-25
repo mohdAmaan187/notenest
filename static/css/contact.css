@@ -92,6 +92,7 @@ body::-webkit-scrollbar {
     color: black;
     width: 101%;
     height: 50px;
+    transition: background-color 0.2s, color 0.2s,box-shadow 0.2s;
 }
 
 
@@ -153,6 +154,17 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+.send_inquiry:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px white;
+}
+
+.send_inquiry:active {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px black;
+}
 
 
 @media screen and (max-width: 600px) { 
@@ -215,4 +227,13 @@ body::-webkit-scrollbar {
     .send_inquiry {
         width: 440px;
     }
+
+    .selector {
+        width: 100%;
+    }
+
+    .form_submitted {
+        width: 96%;
+    }
+    
 }

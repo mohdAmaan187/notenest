@@ -67,6 +67,11 @@
     color: black;
 }
 
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+
 /* Mobiles */
 @media screen and (max-width: 600px) {
     .nav_bar {
