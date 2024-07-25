@@ -97,8 +97,12 @@
 
 .links {
     font-family: "kanit";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
+}
+
+.links {
+    text-decoration: none;
 }
 
 
